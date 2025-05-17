@@ -1,7 +1,5 @@
 import React from "react"
 import Busca from "./components/Busca"
-import { createClient } from 'pexels'
-import env from 'react-dotenv'
 import ListaImagens from "./components/ListaImagens"
 import PexelsLogo from "./components/PexelsLogo"
 import pexelsClient from "./utils/pexelsClient"
@@ -29,10 +27,6 @@ export default class App extends React.Component {
       this.setState({photos: result.data.photos})
     })
 
-  }
-
-  componentDidMount() {
-    this.pexelsClient = createClient(env.PEXELS_KEY)
   }
 
   render() {
