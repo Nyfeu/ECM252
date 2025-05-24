@@ -32,11 +32,11 @@ const Accordion = ({ itens }) => {
 
                 <div onClick={() => _clickedItem(key)}>
                     <i className={verifyIcon(key)}></i>
-                    <h5 className='inline ml-3'>{item.titulo}</h5>
+                    <h5 className='inline ml-3'>{item.title}</h5>
                 </div>
 
                 <div style={verifyContent(key)}>
-                    <p>{item.conteudo}</p>
+                    <p>{item.content}</p>
                 </div>
 
             </Card>
